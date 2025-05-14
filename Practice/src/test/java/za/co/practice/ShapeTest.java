@@ -15,6 +15,16 @@ class ShapeTest {
 
     @Test
     void triangle() {
+        Shape s = new Shape();
+        s.Triangle(5);
+        assertEquals(s,
+    """
+            *
+            * *
+            * * *
+            * * * *
+            * * * * *
+            """);
     }
 
     @Test
